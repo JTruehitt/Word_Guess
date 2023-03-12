@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>Word Guess</title>
 </head>
 <body>
@@ -21,13 +21,18 @@
             <div class="scores cluster"><p class="winScore">Wins: <span class="winDisplay">0</span></p><p class="lossScore">Losses: <span class="lossDisplay">0</span></p></div>
             <p class="gameTopText">Choose a letter
             </p>
-            <div class="letterContainer">
-                <span class="letter"></span>
+            <input type="text" class="letterInput" maxlength="1" >
+            <div class="letterContainer cluster">
             </div>
-            <p class="timeLeft">Time left: <span class="clock"></span></p>
-            <p class="wrong">Wrong letters: <span class="wrong"></span></p>
+
+            <div class="helpText">
+                <p>Hint: <span class ="hint">Hint Goes Here</span></p>
+                <p class="timeLeft">Time left: <span class="clock">30</span></p>
+                <p>Wrong letters: <span class="wrong"></span></p>
+            </div>
+            <button class="newGame">New Game</button>
         </div>
     </main>
-    <script src="/assets/script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>

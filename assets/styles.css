@@ -40,7 +40,6 @@ button {
 .center {
   box-sizing: content-box;
   margin-inline: auto;
-  max-inline-size: var(--measure);
 }
 
 .stack {
@@ -60,8 +59,19 @@ button {
 
 .cluster {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
   align-items: center;
+}
+
+.letter {
+  height: 4rem;
+  width: 4rem;
+  background: none;
+}
+
+.gameContainer {
+  display: none;
 }
