@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #114466;
+  color: #fff;
+  padding-inline: 2em;
+}
+
+header {
+  padding-block: 1.5em;
+}
+
+button {
+  max-inline-size: 20ch;
+}
+
+.box {
+  padding: 1em;
+  border: var(--border-thin) solid;
+  --color-light: #fff;
+  --color-dark: #000;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  margin-block-end: 1em;
+}
+
+.box * {
+  color: inherit;
+}
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.stack > * {
+  margin-block: 0;
+}
+
+.stack > * + * {
+  margin-block-start: 1.5rem;
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
