@@ -7,20 +7,35 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: #114466;
   color: #fff;
   padding-inline: 2em;
+  font-size: 1.25rem;
+  color: #114466;
 }
 
 header {
   padding-block: 1.5em;
+  color: #fff;
+  font-size: 1.25rem;
 }
 
 button {
   max-inline-size: 20ch;
+  font-size: 1.5rem;
+  padding: 0.75em 1.5em;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #114466;
+}
+
+.mainPageContainer p {
+  font-size: 2.5rem;
+  color: #114466;
 }
 
 .box {
@@ -31,10 +46,7 @@ button {
   color: var(--color-dark);
   background-color: var(--color-light);
   margin-block-end: 1em;
-}
-
-.box * {
-  color: inherit;
+  max-inline-size: 50ch;
 }
 
 .center {
@@ -60,18 +72,35 @@ button {
 .cluster {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1rem;
   justify-content: center;
   align-items: center;
 }
 
-.letter {
+.letterContainer input {
   height: 4rem;
   width: 4rem;
   background: none;
+  flex: 0 1 2rem;
+  font-size: 2.5rem;
+  color: #114466;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #114466;
 }
 
 .gameContainer {
   display: none;
+  color: #114466;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.clock {
+  color: red;
 }

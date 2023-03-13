@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Word Guess</title>
 </head>
 <body>
@@ -19,7 +22,7 @@
 
         <div class="gameContainer box center stack">
             <div class="scores cluster"><p class="winScore">Wins: <span class="winDisplay">0</span></p><p class="lossScore">Losses: <span class="lossDisplay">0</span></p></div>
-            <p class="gameTopText">Choose a letter
+            <p class="gameTopText">Type a letter to guess. Be careful, each wrong guess takes 3 seconds off the clock!
             </p>
             <input type="text" class="letterInput" maxlength="1" >
             <div class="letterContainer cluster">
@@ -30,7 +33,10 @@
                 <p class="timeLeft">Time left: <span class="clock">30</span></p>
                 <p>Wrong letters: <span class="wrong"></span></p>
             </div>
-            <button class="newGame">New Game</button>
+            <div class="cluster">
+                <button class="newGame">New Game</button>
+                <button class="reset">Clear Scores</button>
+            </div>
         </div>
     </main>
     <script src="assets/script.js"></script>
