@@ -19,3 +19,4 @@ In creating this app, I furthered my knowledge around some of the following skil
 
 
 ## Link to Deployed App
+https://jtruehitt.github.io/Word_Guess/
